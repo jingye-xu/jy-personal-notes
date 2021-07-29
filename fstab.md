@@ -20,7 +20,7 @@ The space or tab-separated fields within each row must appear in a specific orde
     ```
     UUID=4706-0137  /media/sda1     ntfs    defaults,nofail  0 0
     ```
-2. use the following command to check if the fatab file correctly modified:
+2. Use the following command to check if the fatab file correctly modified:
     ```
-    
+
     ```
