@@ -22,5 +22,5 @@ The space or tab-separated fields within each row must appear in a specific orde
     ```
 2. Use the following command to check if the fatab file correctly modified:
     ```
-
+    sudo mount -a
     ```
