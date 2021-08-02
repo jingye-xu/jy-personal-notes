@@ -1,4 +1,4 @@
-# How to set grub to remember you last selected entry
+# How to set grub to remember your last selected entry
 1. Edit the file /etc/default/grub
     ```
     sudo vim /etc/default/grub
