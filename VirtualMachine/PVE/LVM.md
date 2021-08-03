@@ -40,7 +40,7 @@ Please note that the following commands will destroy all existing data on /dev/s
     # vgcreate vmdata /dev/sdb1
     ```
 ## Create logical volume
-This can be easily done by creating a new thin LV.
+This can be easily done by creating a new thin LV:
     ```
     # lvcreate -n <Name> -V <Size[M,G,T]> <VG>/<LVThin_pool>
     ```
@@ -48,7 +48,7 @@ A real world example:
     ```
     # lvcreate -n vz -V 10G pve/data
     ```
-Now a filesystem must be created on the LV.
+Now a filesystem must be created on the LV:
     ```
     # mkfs.ext4 /dev/pve/vz
     ```
