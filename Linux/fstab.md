@@ -1,3 +1,7 @@
+Path:
+    ```
+    /etc/fstab
+    ```
 # An example of an fstab file:
 ```
 # device-spec   mount-point   fs-type  options  dump pass
