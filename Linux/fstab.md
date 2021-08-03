@@ -1,4 +1,4 @@
-Path:
+File path:
     ```
     /etc/fstab
     ```
