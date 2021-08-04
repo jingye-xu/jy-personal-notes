@@ -91,3 +91,15 @@ printable = no
 ```
 
 # 2. Configure samba client (Linux)
+Permenant connection:  
+Add the following line in the fstab file:
+```
+//{ip address}/{folder} /{mount point} cifs rw,user,username={username},password={password},nofail,uid={uid},gid={gid} 0 0
+```
+If you don't specify the uid and gid, the mount path will belong to root by default.  
+The uid and gid can be obtained by `id` command:  
+```
+$ id
+uid=1000(vm100) gid=1000(vm100)...
+```
+Here we want to let the folder belong to vm100, so we can specify the uid=1000 and gid=1000.
