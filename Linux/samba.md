@@ -75,7 +75,6 @@ workgroup = WORKGROUP
 server string = Samba File Server
 security = user
 encrypt passwords = yes
-smb passwd file = /etc/samba/smbpasswd
 
 [sharedFolder]
 comment = shared folder
