@@ -14,3 +14,5 @@ Here we got the render group id is 103, so add follows:
 --device /dev/dri/renderD128:/dev/dri/renderD128 --device /dev/dri/card0:/dev/dri/card0 --group-add=103
 ```
 Make sure the path is right.
+
+## 8006 is the default port
