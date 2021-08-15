@@ -8,7 +8,7 @@ Where:
 `/media` stores the contents in `/media` of docker  
 
 ## If you want to add hardware acceleration device
-In order to use hardware acceleration in Docker, the devices must be passed to the container. To see what video devices are available, you can run sudo lshw -c video or vainfo on your machine. VAAPI may require the render group added to the docker permissions. The render group id can be discovered in /etc/group such as render:x:122: 
+In order to use hardware acceleration in Docker, the devices must be passed to the container. To see what video devices are available, you can run sudo lshw -c video or vainfo on your machine. VAAPI may require the render group added to the docker permissions. The render group id can be discovered in /etc/group such as `render:x:122`: 
 Here we got the render group id is 103, so add follows:
 ```
 --device /dev/dri/renderD128:/dev/dri/renderD128 --device /dev/dri/card0:/dev/dri/card0 --group-add=103
