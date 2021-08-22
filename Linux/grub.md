@@ -31,7 +31,8 @@
     ```
     sudo update-grub
     ```
-# To update grub on operating systems that do not have an “update-grub” function, run this command in the terminal:
+# To update grub on operating systems that do not have an “update-grub” function, run this command in the terminal:  
     ```
     sudo grub-mkconfig -o /boot/grub/grub.cfg
     ```
+    
