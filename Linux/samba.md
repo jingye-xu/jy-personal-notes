@@ -28,7 +28,7 @@ Aug 03 20:39:01 pve systemd[1]: Started Samba NMB Daemon.
 ## 3. Configure samba server
 Goals:  
     1. Samba server cannot allow guest access.  
-    2. Create a folder named "haredFolder".  
+    2. Create a folder named "sharedFolder".  
     3. Users under group "smbedit" have whole control on the folder.  
     4. Users under group "smbview" can only read the contents.  
 
