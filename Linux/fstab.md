@@ -21,10 +21,19 @@ The space or tab-separated fields within each row must appear in a specific orde
     ```
 # Tips
 1. The `nofail` option helps make sure that the VM starts even if the file system is corrupted or the file system doesn't exist at startup. We recommend that you use the nofail option in the fstab file to enable startup to continue after errors occur in partitions that are not required for the VM to start.
-    ```
-    UUID=4706-0137  /media/sda1     ntfs    defaults,nofail  0 0
-    ```
+
+```
+UUID=4706-0137  /media/sda1     ntfs    defaults,nofail  0 0
+```
+
 2. Use the following command to check if the fatab file correctly modified:
-    ```
-    sudo mount -a
-    ```
+
+```
+sudo mount -a
+```
+
+3. UUID can be seen by blkid:
+
+```bash
+blkid
+```
