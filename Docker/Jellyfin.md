@@ -1,6 +1,12 @@
 # Jellyfin general command
 ```
-docker run -d -v /src/jellyfin/config:/config -v /src/jellyfin/cache:/cache -v /media/sharedFolder:/media --net=host --restart always jellyfin/jellyfin:latest
+docker run -d \
+-v /src/jellyfin/config:/config \
+-v /src/jellyfin/cache:/cache \
+-v /media/sharedFolder:/media \
+--net=host \
+--restart always \
+jellyfin/jellyfin:latest
 ```
 Where:
 `/src/jellyfin/config` stores the contents in `/config` of the docker  
