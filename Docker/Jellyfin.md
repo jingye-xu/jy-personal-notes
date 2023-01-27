@@ -21,4 +21,4 @@ Here we got the render group id is 103, so add follows:
 ```
 Make sure the path is right.
 
-## 8006 is the default port
+## 8096 is the default port
