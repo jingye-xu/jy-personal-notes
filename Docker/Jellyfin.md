@@ -1,6 +1,7 @@
 # Jellyfin general command
 ```
 docker run -d \
+--name jellyfin \
 -v /src/jellyfin/config:/config \
 -v /src/jellyfin/cache:/cache \
 -v /media/sharedFolder:/media \
@@ -22,3 +23,19 @@ Here we got the render group id is 103, so add follows:
 Make sure the path is right.
 
 ## 8096 is the default port
+
+## Qnap NAS
+
+```
+docker run -d \
+--name jellyfin \
+-v /share/CACHEDEV1_DATA/Container/jellyfin/config:/config \
+-v /share/CACHEDEV1_DATA/Container/jellyfin/cache:/cache \
+-v /share/CACHEDEV1_DATA/medias:/media \
+-e PUID=1000 \
+-e PGID=100 \
+--net=host \
+--restart always \
+--device /dev/dri:/dev/dri \
+nyanmisaka/jellyfin:latest
+```
