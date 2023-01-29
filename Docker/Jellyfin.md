@@ -24,18 +24,26 @@ Make sure the path is right.
 
 ## 8096 is the default port
 
+## use `id {username}` to check PUID and PGID
+
 ## Qnap NAS
 
 ```
 docker run -d \
 --name jellyfin \
--v /share/CACHEDEV1_DATA/Container/jellyfin/config:/config \
--v /share/CACHEDEV1_DATA/Container/jellyfin/cache:/cache \
--v /share/CACHEDEV1_DATA/medias:/media \
+-v /share/CACHEDEV1_DATA/Container/dockers/jellyfin/config:/config \
+-v /share/CACHEDEV1_DATA/Container/dockers/jellyfin/cache:/cache \
+-v /share/CACHEDEV2_DATA/medias:/media \
 -e PUID=1000 \
 -e PGID=100 \
+-e TZ=America/Chicago \
 --net=host \
 --restart always \
 --device /dev/dri:/dev/dri \
-nyanmisaka/jellyfin:latest
+jellyfin/jellyfin:latest
 ```
+
+## Other alternative jellyfin
+
+* lscr.io/linuxserver/jellyfin:latest
+* nyanmisaka/jellyfin
