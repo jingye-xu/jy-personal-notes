@@ -4,7 +4,7 @@
 # apt install samba
 ```
 
-## 2. Verfy the server installation
+## 2. Verify the server installation
 ```
 root@pve:~# systemctl status nmbd
 ● nmbd.service - Samba NMB Daemon
